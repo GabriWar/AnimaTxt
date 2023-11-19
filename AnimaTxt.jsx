@@ -1,4 +1,4 @@
-const animatonmouseover = (id, originText) => {
+const animatoeonmouseover = (id, originText) => {
     if (!originText) {
         originText = document.getElementById(id).innerText;
     }
@@ -24,4 +24,4 @@ const animatonmouseover = (id, originText) => {
         iteration += 1 / 3;
     }, 30);
 };
-export default animatonmouseover;
+export default animateonmouseover;
