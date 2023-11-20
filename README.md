@@ -37,3 +37,6 @@ to animate the text to another one, you can pass two variables to the function:
 ```
 
 You can also pass only the id and the function will try to infer the text, but its kinda buggy
+
+## Examples
+![ex1](https://github.com/GabriWar/AnimaTxt/assets/72227489/fecec99b-e990-4158-a10a-6ab1144c9087)
