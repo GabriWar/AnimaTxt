@@ -1,11 +1,12 @@
 # AnimaTxt
 A simple js/react function that animates a text on mouseover, its pretty cool
 ![example](https://github.com/GabriWar/AnimaTxt/assets/72227489/b1bfe142-c835-43a6-8d55-fbacfc90adea)
+❗works better with a monospaced font❗
 ## Table of Contents
 
 
 - [Usage](#usage)
-- [Examples](#examples)
+- [Example](#example)
 
 
 ## Usage
@@ -38,5 +39,5 @@ to animate the text to another one, you can pass two variables to the function:
 
 You can also pass only the id and the function will try to infer the text, but its kinda buggy
 
-## Examples
+## Example
 ![ex1](https://github.com/GabriWar/AnimaTxt/assets/72227489/fecec99b-e990-4158-a10a-6ab1144c9087)
