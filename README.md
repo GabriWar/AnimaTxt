@@ -21,7 +21,7 @@ Pass as a function to be invoked on the OnMouseOver event, passing the id of the
 
 
 <h1 id = "anim1" onMouseOver={() => {animateonmouseover('anim1','World')}}>World</h1>
-ID--------^^^^^------------------------------------------^^^^^    ^^^^-----^^^^^------TEXT
+ID--------^^^^^------------------------------------------^^^^^   ^^^^^-----^^^^^------TEXT
 
 
 ```
