@@ -1,24 +1,24 @@
 const animateonmouseover = (id, FirstText, SecoundText) => {
 
-    if ((FirstText == undefined)|| (SecoundText == undefined)) {
+    if ((FirstText == undefined)|| (SecoundText == undefined)) { //check if the user passed the text to be animated, if now we just use the doc innerText
         FirstText = document.getElementById(id).innerText;
         SecoundText = document.getElementById(id).innerText;
     }
-    const element = document.getElementById(id);
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let interval = null;
+    const element = document.getElementById(id); //saving the innertext in a var
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //all the letters that we can use to animate, should be 26
+    let interval = null; 
     let iteration = 0;
-    let buffer = FirstText;
-    if (document.getElementById(id).innerText == buffer) {buffer = SecoundText}
+    let buffer = FirstText; //we start by buffering the first text, so we can go back to it later
+    if (document.getElementById(id).innerText == buffer) {buffer = SecoundText} //if the text in the document is the same as the first text, we change the buffer to the secound text
     clearInterval(interval);
-    interval = setInterval(() => {
+    interval = setInterval(() => { //magic happens here
         element.innerText = buffer
             .split("")
             .map((letter, index) => {
                 if (index < iteration) {
                     return buffer[index];
                 }
-                return letters[Math.floor(Math.random() * 26)];
+                return letters[Math.floor(Math.random() * 26)]; // 26 change to the number of chars in the letters var to change the letters
             })
             .join("");
         if (iteration >= buffer.length) {
