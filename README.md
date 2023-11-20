@@ -5,11 +5,35 @@ A simple js/react function that animates a text on mouseover, its pretty cool
 
 
 - [Usage](#usage)
-- [Options](#options)
 - [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
 
 
 ## Usage
-WIP
+import
+```
+
+import animateonmouseover from './AnimaTxt.jsx'
+
+```
+Pass as a function to be invoked on the OnMouseOver event, passing the id of the html tag, the function and the text of the div
+```
+
+
+<h1 id = "anim1" onMouseOver={() => {animateonmouseover('anim1','World')}}>World</h1>
+ID--------^^^^^------------------------------------------^^^^^    ^^^^-----^^^^^------TEXT
+
+
+```
+
+to animate the text to another one, you can pass two variables to the function:
+
+```
+
+
+<h1 id = "anim1" onMouseOver={() => {animateonmouseover('anim1','Hello', 'World')}}>World</h1>
+                                                                 ^^^^^    ^^^^^
+                                                                 text1    text2
+
+```
+
+You can also pass only the id and the function will try to infer the text, but its kinda buggy
