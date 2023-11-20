@@ -1,4 +1,4 @@
-const animatoeonmouseover = (id, originText) => {
+const animateonmouseover = (id, originText) => {
     if (!originText) {
         originText = document.getElementById(id).innerText;
     }
@@ -9,7 +9,7 @@ const animatoeonmouseover = (id, originText) => {
     let iteration = 0;
     clearInterval(interval);
     interval = setInterval(() => {
-        element.innerText = element.innerText
+        element.innerText = originText
             .split("")
             .map((letter, index) => {
                 if (index < iteration) {
