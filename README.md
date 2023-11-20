@@ -41,3 +41,8 @@ You can also pass only the id and the function will try to infer the text, but i
 
 ## Example
 ![ex1](https://github.com/GabriWar/AnimaTxt/assets/72227489/fecec99b-e990-4158-a10a-6ab1144c9087)
+
+
+## Thanks
+[@vinoduarte](https:/vinoduarte) for helping with tests.
+
