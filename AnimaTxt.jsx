@@ -1,9 +1,10 @@
 const animateonmouseover = (id, FirstText, SecoundText) => {
 
-    if ((FirstText == undefined)|| (SecoundText == undefined)) { //check if the user passed the text to be animated, if now we just use the doc innerText
+    if ((FirstText == undefined) || (SecoundText == undefined)) { //check if the user passed the text to be animated, if now we just use the doc innerText
+        if (FirstText != undefined) {SecoundText = FirstText ;}else //if the user passed the first text, we use the doc innerText for the secound text
         FirstText = document.getElementById(id).innerText;
         SecoundText = document.getElementById(id).innerText;
-    }
+    } 
     const element = document.getElementById(id); //saving the innertext in a var
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //all the letters that we can use to animate, should be 26
     let interval = null; 
